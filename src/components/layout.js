@@ -39,7 +39,7 @@ const Layout = ({ children }) => {
             marginTop: `2rem`,
           }}
         >
-          © {new Date().getFullYear()}, Hecho por 
+          © {new Date().getFullYear()}, Hecho por {` `} 
           <a href="https://alexgomez.dev/">AlexGomez.Dev</a>
         </footer>
       </div>
