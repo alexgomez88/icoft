@@ -5,11 +5,11 @@ export const Contact = () => (
   <div className="bg-primary text-white flex flex-col md:flex-row py-12 px-8 lg:px-12 gap-6">
     <form
       className="flex flex-col w-full md:w-1/2 mx-auto"
-      name="contactForm"
+      name="ContactForm"
       method="POST" data-netlify-recaptcha="true" data-netlify="true"
     >
       <h2 className="text-3xl md:text-4xl font-semibold mb-6">Contactanos</h2>
-
+      <input type="hidden" name="form-name" value="ContactForm"/>
       <div className="mb-6">
         <label htmlFor="name" className="block mb-2 text-sm">
           Nombre
