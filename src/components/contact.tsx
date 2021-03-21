@@ -3,21 +3,12 @@ import React from "react"
 
 export const Contact = () => (
   <div className="bg-primary text-white flex flex-col md:flex-row py-12 px-8 lg:px-12 gap-6">
-    <form className="flex flex-col w-full md:w-1/2 mx-auto">
+    <form
+      className="flex flex-col w-full md:w-1/2 mx-auto"
+      name="contactForm"
+      data-netlify="true"
+    >
       <h2 className="text-3xl md:text-4xl font-semibold mb-6">Contactanos</h2>
-
-      <input type="hidden" name="apikey" value="YOUR_ACCESS_KEY_HERE" />
-      <input
-        type="hidden"
-        name="subject"
-        value="New Submission from Web3Forms"
-      />
-      <input
-        type="checkbox"
-        name="botcheck"
-        id=""
-        style={{ display: "none" }}
-      />
 
       <div className="mb-6">
         <label htmlFor="name" className="block mb-2 text-sm">
@@ -60,7 +51,7 @@ export const Contact = () => (
       </div>
       <div className="mb-6">
         <label htmlFor="message" className="block mb-2 text-sm">
-          Your Message
+          Su mensaje:{" "}
         </label>
 
         <textarea
