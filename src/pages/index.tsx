@@ -9,7 +9,7 @@ import { WhoWeAre } from "../components/who-we-are"
 
 const IndexPage = () => (
   <Layout>
-    <SEO/>
+    <SEO title="Bienvenido"/>
     <Hero/>
     <WhoWeAre/>
     <Services />
