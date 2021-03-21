@@ -6,7 +6,7 @@ export const Contact = () => (
     <form
       className="flex flex-col w-full md:w-1/2 mx-auto"
       name="contactForm"
-      data-netlify="true"
+      method="POST" data-netlify-recaptcha="true" data-netlify="true"
     >
       <h2 className="text-3xl md:text-4xl font-semibold mb-6">Contactanos</h2>
 
@@ -63,6 +63,7 @@ export const Contact = () => (
           required
         ></textarea>
       </div>
+      <div data-netlify-recaptcha="true"/>
       <div className="mb-6">
         <button
           type="submit"
